@@ -1,11 +1,18 @@
+// Library
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+
+// Pages
 import App from './App';
 import Payment from './Payment';
 import IndexPage from './IndexPage';
 import Reservation from './Reservation';
-import './index.css';
+
+// Styles
+import './styles.min.css';
+import './App.css';
+
 
 ReactDOM.render((
   <Router history={hashHistory}>
