@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, Table, Card } from 'elemental';
+import { Row, Col, Table, Card, Alert } from 'elemental';
+import Payment from './Payment';
 
 class IndexPage extends Component {
   render() {
@@ -23,6 +24,7 @@ class IndexPage extends Component {
             </Card>
           </Col>
         </Row>
+        <Alert type="danger"><strong>For the payment:</strong> You won't see any notification weather the payment is success or not. I am going to check the payment before leave. Contact ne at "RideShare (AT) Shacas.com" after the payment. Thanks</Alert>
         <Row>
           <Col sm="100%">
           <Card>
@@ -52,7 +54,7 @@ class IndexPage extends Component {
                   <td>February 26, 2017</td>
                   <td>18:00 to 19:00</td>
                   <td>Downtown, Fairview Mall, STC</td>
-                  <td><Button type="primary">Deposit</Button></td>
+                  <td><Payment /></td>
                 </tr>
                 <tr>
                   <td className="u-text-center"><b>3</b></td>
@@ -60,7 +62,7 @@ class IndexPage extends Component {
                   <td>February 29, 2017</td>
                   <td>18:00 to 20:00</td>
                   <td>Anywhere in Kingston</td>
-                  <td><Button type="primary">Deposit</Button></td>
+                  <td><Payment /></td>
                 </tr>
               </tbody>
             </Table>
